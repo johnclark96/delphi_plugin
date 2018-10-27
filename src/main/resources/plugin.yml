@@ -1,0 +1,15 @@
+name: Delphi
+version: ${project.version}
+main: me.delphidevelopment.delphi.Delphi
+authors: [marines4ever]
+description: Custom Core Plugin
+commands:
+  die:
+    description: Die
+    aliases: [kill]
+  heal:
+    description: Heal +1
+    aliases: []
+  god:
+    description: God Mode
+    aliases: []
