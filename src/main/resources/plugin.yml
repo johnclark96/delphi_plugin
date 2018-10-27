@@ -13,3 +13,6 @@ commands:
   god:
     description: God Mode
     aliases: []
+  feed:
+    description: Feed player max
+    aliases: [food]

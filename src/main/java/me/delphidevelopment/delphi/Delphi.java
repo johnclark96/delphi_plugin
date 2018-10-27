@@ -1,6 +1,7 @@
 package me.delphidevelopment.delphi;
 
 import me.delphidevelopment.delphi.commands.Die;
+import me.delphidevelopment.delphi.commands.Feed;
 import me.delphidevelopment.delphi.commands.God;
 import me.delphidevelopment.delphi.commands.Heal;
 import me.delphidevelopment.delphi.events.OnDeath;
@@ -24,5 +25,6 @@ public final class Delphi extends JavaPlugin implements Listener {
         getCommand("god").setExecutor(new God());
         getCommand("heal").setExecutor(new Heal());
         getCommand("die").setExecutor(new Die());
+        getCommand("feed").setExecutor(new Feed());
     }
 }
