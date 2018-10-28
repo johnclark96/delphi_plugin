@@ -8,7 +8,5 @@ public class OnDeath implements Listener {
 
     @EventHandler
     public void onDeath(PlayerDeathEvent e){
-        e.getEntity().sendMessage("You suck!");
-        e.getEntity().setFlying(true);
     }
 }

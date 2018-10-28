@@ -1,5 +1,5 @@
 name: Delphi
-version: ${project.version}
+version: 1.0.0-SNAPSHOT
 main: me.delphidevelopment.delphi.Delphi
 authors: [marines4ever]
 description: Custom Core Plugin
@@ -16,3 +16,14 @@ commands:
   feed:
     description: Feed player max
     aliases: [food]
+  printMessageFromConfig:
+    description: Print Message
+  explode:
+    description: Boom
+  sendword:
+    description: send something
+  clear:
+    description: Clear Inventory
+  openinventory:
+    description: Opens Inventory
+    aliases: [openinv]

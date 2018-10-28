@@ -1,0 +1,18 @@
+#MYSQL CONNECTION
+host: localhost
+port: 3306
+database: delphi_plugin
+username: root
+password:
+table: delphi_plugin
+
+
+
+#Stuff
+Food: 'Potato'
+Number: 125
+Boolean: true
+FoodList:
+  - 'Pizza'
+  - 'Potato'
+  - 'Banana'
