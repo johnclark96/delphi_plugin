@@ -24,6 +24,12 @@ commands:
     description: send something
   clear:
     description: Clear Inventory
+    aliases: [ci]
   openinventory:
     description: Opens Inventory
     aliases: [openinv]
+  gamemode:
+    description: Gamemode
+    aliases: [gm]
+  fly:
+    description: Fly

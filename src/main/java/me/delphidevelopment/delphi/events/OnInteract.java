@@ -1,5 +1,6 @@
 package me.delphidevelopment.delphi.events;
 
+import me.delphidevelopment.delphi.items.CustomItems;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
@@ -10,6 +11,7 @@ import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
 
 public class OnInteract implements Listener {
+    private CustomItems ci = new CustomItems();
 
     @EventHandler
     public void onInteract(PlayerInteractEvent event){
@@ -29,5 +31,11 @@ public class OnInteract implements Listener {
                 player.sendMessage(ChatColor.GOLD + "You clicked: " + ChatColor.RED + block.getType().toString().toUpperCase());
             }
         }
+    }
+
+    @EventHandler
+    public void onPunch(PlayerInteractEvent event){
+        Player player = event.getPlayer();
+        ci.giveItems(player);
     }
 }

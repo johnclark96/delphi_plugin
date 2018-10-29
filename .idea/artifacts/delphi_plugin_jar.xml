@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="delphi_plugin:jar">
+    <output-path>$USER_HOME$/Desktop/MC 1.13.2/plugins</output-path>
+    <root id="archive" name="delphi.jar">
+      <element id="module-output" name="delphi_plugin" />
+    </root>
+  </artifact>
+</component>
