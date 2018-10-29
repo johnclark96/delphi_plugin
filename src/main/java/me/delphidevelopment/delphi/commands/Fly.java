@@ -16,11 +16,11 @@ public class Fly implements CommandExecutor {
                 return true;
             }
             Player player = (Player) sender;
-            if(!player.isFlying()){
-                player.setFlying(true);
+            if(!player.getAllowFlight()){
+                player.setAllowFlight(true);
                 player.sendMessage("You have enabled flying!");
             }else{
-                player.setFlying(false);
+                player.setAllowFlight(false);
                 player.sendMessage("You have disabled flying!");
             }
             return true;
@@ -29,11 +29,11 @@ public class Fly implements CommandExecutor {
             if(target == null) {
                 sender.sendMessage("That is not a valid player!");
                 return true;
-            }if(!target.isFlying()){
-                target.setFlying(true);
+            }if(!target.getAllowFlight()){
+                target.setAllowFlight(true);
                 target.sendMessage("You can now fly!");
             }else{
-                target.setFlying(false);
+                target.setAllowFlight(false);
                 target.sendMessage("You can no longer fly!");
             }
             return true;

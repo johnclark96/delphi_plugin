@@ -39,6 +39,7 @@ public final class Delphi extends JavaPlugin implements Listener {
         getCommand("clear").setExecutor(new Clear());
         getCommand("openinventory").setExecutor(new OpenInventory());
         getCommand("gamemode").setExecutor(new Gamemode());
+        getCommand("fly").setExecutor(new Fly());
     }
 
     public void loadConfig(){
